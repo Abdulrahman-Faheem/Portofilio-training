@@ -1,0 +1,273 @@
+@import "extends";
+
+img {
+    max-width: 100%;
+}
+
+
+p {
+    color: $text-color;
+}
+
+h2,
+h4 {
+    color: $red-color;
+    @extend %hover;
+}
+
+a {
+    text-decoration: none;
+    color: $red-color;
+    @extend %hover;
+}
+
+// Start home section
+
+.home {
+    background-color: $dark-color;
+    padding: 100px 0;
+
+    .container {
+        max-width: 1170px;
+        margin: auto;
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4em;
+
+
+
+        h4 {
+
+            margin-bottom: 0;
+
+            a {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .item {
+            h4 {
+                margin-top: 0;
+            }
+
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-column-gap: 2em;
+
+
+        }
+
+
+    }
+
+}
+
+// End home section
+
+
+// Start cards section
+
+.cards {
+    background-color: $dark-color;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px;
+
+
+    .card {
+        .card-overlay {
+            position: relative;
+
+            &:hover .overlay {
+                opacity: 1;
+                transform: rotatey(0deg);
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: $red-color, $alpha: 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: rotatey(90deg);
+                transition: all .5s ease;
+                opacity: 0;
+
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                h4 {
+                    color: $white-color;
+                    font-weight: 400;
+                    font-size: 24px;
+                }
+
+
+            }
+
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    a {
+        font-size: 28px;
+    }
+
+
+    p {
+        line-height: 1.8;
+    }
+
+    .card-text {
+        padding: 30px 25px 20px;
+    }
+}
+
+//End cards section
+
+
+
+// Start recent work
+
+.recent-work {
+    background-color: $red-color;
+    padding: 60px 0;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $white-color;
+    }
+
+    &:hover a {
+        color: $red-color;
+    }
+
+    a {
+        color: $white-color;
+        text-align: center;
+        display: block;
+        letter-spacing: 4px;
+        font-size: 14px;
+        text-transform: uppercase
+    }
+}
+
+
+
+// End recent work
+
+
+
+// Start boxes section
+
+
+.posts {
+    background-color: $dark-color;
+    padding: 60px 0;
+
+    .container {
+        width: 800px;
+        margin: auto;
+
+        .post {
+            margin: 70px 0;
+
+            .post-overlay {
+                position: relative;
+                text-align: center;
+
+                &:hover .overlay {
+                    opacity: 1;
+                    transform: rotatey(0deg);
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($color: $red-color, $alpha: 0.8);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: rotatey(90deg);
+                    transition: all .5s ease;
+                    opacity: 0;
+
+                    a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    h4 {
+                        color: $white-color;
+                        font-size: 24px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 28px;
+            margin: 30px 0;
+        }
+
+
+        p {
+            font-size: 14px;
+            line-height: 1.88;
+            letter-spacing: 0;
+        }
+
+        .more {
+            display: none;
+        }
+
+        .btn-more {
+            background-color: #ebeced;
+            color: #333;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: #aaa;
+            }
+        }
+    }
+}
+
+
+
+// End boxes section

@@ -1,0 +1,89 @@
+
+p {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    color: $text-color;
+    line-height: 1.88;
+}
+
+
+/* Start About Me */
+
+.about-me {
+    background-color: $dark-color;
+    padding: 20px 0;
+    .container{
+        max-width: 1170px;
+        margin: auto;
+        .headeing{
+            text-align: center;
+            h2{
+                color: $white-color;
+                text-transform: capitalize;
+                font-size: 48px;
+                font-weight: 600px;
+            }
+            h6{
+                color: #667084;
+                font-size: 14px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+        }
+
+        .text{
+            font-size: 16px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 4em;
+        }
+    }
+
+}
+
+/* End About Me */
+
+
+/* Start Skew */
+.skew::after{
+    transform-origin: top left;
+    transform: skewy(4deg);
+    background-color: $very-dark-color;
+}
+
+
+/* End Skew */
+
+
+/* Start Why-Work-With-Me */
+
+.why-work-with-me {
+    background-color: $very-dark-color;
+    padding: 20px 0;
+    .container{
+
+        .headeing{
+            text-align: center;
+            
+            h2{
+                color: $white-color;
+                text-transform: capitalize;
+                font-size: 48px;
+                font-weight: 600px;
+            }
+            h6{
+                color: #667084;
+                font-size: 14px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+        }
+        .text{
+            width: 50%;
+            margin: auto;
+            font-size: 16px;
+            line-height: 1.88;
+        }
+    }
+}
+
+/* End Why-Work-With-Me */

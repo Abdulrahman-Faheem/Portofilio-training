@@ -1,0 +1,15 @@
+@import "variables";
+
+@import "extends";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+@import "header";
+@import "article";
+
+@import "home";
+@import "footer";
